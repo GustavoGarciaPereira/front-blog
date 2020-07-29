@@ -39,7 +39,7 @@ fetch(`http://127.0.0.1:8000/post/posts/`).then(response =>{
 
 function listar_livros(data){
     const lista = data.map((x)=>{
-        return `<li><a href='file:///home/gustavopereira/Documentos/django_blog_resenha/front-blog/postagem.html?id=${x.id}'>${x.titulo}</a></li>`
+        return `<li><a href='postagem.html?id=${x.id}'>${x.titulo}</a></li>`
     }).join("")
 
     lista_posts.innerHTML = lista
