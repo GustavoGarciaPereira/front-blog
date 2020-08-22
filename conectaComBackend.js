@@ -1,7 +1,7 @@
 const todos_posts = document.getElementById("conteudo")
 const lista_posts = document.getElementById("lista_posts")
 
-fetch(`http://127.0.0.1:8000/post/posts/`).then(response =>{
+fetch(`https://gustavo-blog.herokuapp.com/post/posts/`).then(response =>{
     return response.json();
         })
     .then(data =>{
@@ -30,7 +30,7 @@ function formatar_post(testo){
 
 }
 
-fetch(`http://127.0.0.1:8000/post/posts/`).then(response =>{
+fetch(`https://gustavo-blog.herokuapp.com/post/posts/`).then(response =>{
     return response.json();
         })
     .then(data =>{
